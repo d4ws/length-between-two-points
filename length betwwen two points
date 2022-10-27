@@ -1,0 +1,24 @@
+def prob10():
+    import math
+    list = ["n","e","w","s"]
+    inp = input("Enter: ")
+    w=inp.count("w")
+    e=inp.count("e")
+    n=inp.count("n")
+    s=inp.count("s")    
+    x=e-w
+    y=n-s
+    mesafe = math.sqrt(abs(x**2)+ abs(y**2))
+    
+    if len(inp)>=1 and len(inp)<=200:
+            for char in inp:        
+                if char in list:
+                   return(mesafe)
+                   break
+                else:
+                    return
+                    
+                
+    else:
+        return
+print(prob10())
