@@ -8,12 +8,12 @@ def prob10():
     s=inp.count("s")    
     x=e-w
     y=n-s
-    mesafe = math.sqrt(abs(x**2)+ abs(y**2))
+    length = math.sqrt(abs(x**2)+ abs(y**2))
     
     if len(inp)>=1 and len(inp)<=200:
             for char in inp:        
                 if char in list:
-                   return(mesafe)
+                   return(length)
                    break
                 else:
                     return
